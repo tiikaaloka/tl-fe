@@ -1,1 +1,79 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+$light: #fff;
+$dark: #222;
+
+// colors
+$primary: #aaa; 
+$light-2: #f0f0f0; 
+$light-1: #ddd; 
+$dark-1: rgba(0,0,0,.6); 
+$dark-2: rgba(0,0,0,.8); 
+$blue:rgba(15, 63, 87, 1);
+$blue-bright:#ef8738;
+$blue-highlight:#ffb867;
+$blue-dark:rgba(4,34,49,1);
+$blue-dark-trans-50:rgba(4,34,49,0.5);
+$blue: rgba( 239,135,56,1);
+$blue-light-2: rgba(152,212,206,1);
+$blue-light-1: rgba( 97,177,168,1);
+$blue-dark-1: rgba( 37,130,120,1);
+$blue-dark-2: rgba( 18,107, 97,1);
+
+// General help colors
+$trans-light-9: rgba(255,255,255,.9);
+$trans-light-8: rgba(255,255,255,.8);
+$opaque-dark-1: rgba(100,100,100,1);
+$opaque-dark-2: rgba(50,50,50,1);
+
+@mixin font-body( $size : 17px ) {
+	font-family: 'Shobhika';
+	font-size: $size;
+	font-weight:300;
+}
+@mixin font-title( $size : 24px ) {
+	font-family: 'Shobhika';
+	font-size: $size;
+	font-weight:bold;
+}
+@mixin font-accent( $size : 24px ) {
+	font-family: 'Shobhika';
+	font-size: $size;
+	font-weight:bold;
+}
+@mixin font-lemma( $size: 24px ) {
+	font-family: 'Shobhika';
+	font-size: $size;
+}
+
+	 
+// Load Glyphicons fonts
+@font-face {
+  font-family: 'Shobhika';
+  src: local('Shobhika-Regular.woff2');
+}
+
+
+
+
+/*
+ * Util Mixins 
+ *
+ */
+
+// Easy cross browser transition 
+@mixin transition( $property: all, $duration: 1s, $effect: linear, $delay: 0 ) {
+	-webkit-transition: $property $duration $effect $delay;
+	-moz-transition: $property $duration $effect $delay;
+	-o-transition: $property $duration $effect $delay;
+	transition: $property $duration $effect $delay;
+}
+
+// Easy cross browser opacity
+@mixin opacity( $value: 0.5 ) {
+ 	  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($value * 100));
+ 	  filter: alpha(opacity=($value * 100));
+ 	  -moz-opacity: $value;
+ 	  -khtml-opacity: $value;
+ 	  opacity: $value;
+}
