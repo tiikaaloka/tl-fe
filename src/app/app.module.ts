@@ -25,7 +25,7 @@ import { SuvarnachashakaComponent } from './suvarnachashaka/suvarnachashaka.comp
     SuvarnachashakaComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     NgxHeadroomModule
   ],

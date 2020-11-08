@@ -13,7 +13,7 @@
 	position:fixed;
 }
 .content.primary {
-	min-height:900px;
+	min-height:7900px;
 	text-align:center;
 	margin:100px auto;
 	position:relative;
@@ -24,7 +24,7 @@
 .headline-image {
 	margin-top:-100px;
 	width:100%;
-	height:900px;
+	height:7900px;
 	max-width:1400px;
 	overflow:hidden;
 	background:url("../../assets/tl.jpg");
@@ -60,9 +60,11 @@
 	}
 }
 
-a {
-    font-size: 3em;
-    color: white;
+article {
+    font-size: 1em;
+   div {
+	   color: white;
+   }
     &:hover {
         color: #555;
     }
