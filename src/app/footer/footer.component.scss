@@ -1,14 +1,23 @@
 @import 'src/styles.scss';
 
-footer {
-	//min-height:450px;
-	clear:both;
+.footer {
+	// //min-height:450px;
+	// clear:both;
+	
+	// padding:10px 0;
+	// text-align:center;
+	// width:100%;
+	// position:relative;
+
+	position: absolute;
 	background-color:rgba(30,30,30,1);
 	color:$light;
-	padding:10px 0;
-	text-align:center;
-	width:100%;
-	position:relative;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 10px 0;
+	text-align: center;
+  }
 
 
 	a {
@@ -90,7 +99,6 @@ footer {
 			}
 		}
 	}
-}
 
 @import "src/responsive.scss";
 

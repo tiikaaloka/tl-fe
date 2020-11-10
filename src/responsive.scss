@@ -233,7 +233,7 @@
 		padding: 7px 38px 5px 0px;
 	}
 	header .social-wrap {
-		margin-right:0;
+		margin-right:-100px;
 	}
 	.title {
 		font-size:30px;
@@ -321,7 +321,7 @@
 	}
 
 	.header-block h1.primary-title, .header-block h5.secondary-text, .header-block a.header-link {
-		top:50px;
+		top:150px;
 	}
 	.demo-block .demo-lines>.line {
 		padding:50px 20px;
@@ -374,6 +374,7 @@
 	}
 	.list-type3 li, a{
 		margin-left:-9em;
+		overflow-x: scroll;
 	}
 }
 
@@ -413,7 +414,9 @@
 	.list-type3 li, a{
 		margin-left:-9em;
 	}
-
+	.footer-text .footer-text-column-2 .social-wrap {
+		margin-right:-60px;
+	}
 }
 
 @media (max-device-width:350px){

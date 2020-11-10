@@ -1,4 +1,9 @@
 @import 'src/styles.scss';
+
+.grid.primary{
+	margin: 0 auto;
+	width: 100%;
+}
 .grid {
 	width:100%;
 	clear:both;
@@ -17,9 +22,9 @@
 	}
 }
 .content.primary {
-	min-height:600px;
+	// min-height:600px;
 	text-align:center;
-	margin:100px auto;
+	// margin:100px auto;
 	position:relative;
 	margin-top:10px;
 }
@@ -284,6 +289,9 @@ h2.block-title {
 
 .list-type3{
 	margin:0 auto;
+	max-width: 1200px;
+	margin-bottom: 3em;
+	overflow: auto;
 	}
 	.list-type3 li, .list-type3 a{
 	float:left;

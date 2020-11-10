@@ -26,6 +26,24 @@ $trans-light-8: rgba(255,255,255,.8);
 $opaque-dark-1: rgba(100,100,100,1);
 $opaque-dark-2: rgba(50,50,50,1);
 
+html {
+	height: 100%;
+	box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+	box-sizing: inherit;
+  }
+
+  body {
+	position: relative;
+	margin: 0;
+	padding-bottom: 6rem;
+	min-height: 100%;
+  }
+
 @mixin font-body( $size : 17px ) {
 	font-family: 'Shobhika';
 	font-size: $size;
