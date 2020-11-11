@@ -354,7 +354,16 @@
 		margin-bottom:30px;
 	}
 
+	div.feature.need {
+		width: 100%;
+		margin-left:0px;	
+	}
+
 	.features-block .feature {
+		width: 100%;
+	}
+
+	div.features-block.feature {
 		width:100%;
 		margin-left:120px;
 	}
@@ -384,6 +393,9 @@
 	}
 	.kaarika .f1 {
 		margin-left:0px;
+	}
+	div.adhyayanam.f1 {
+		margin-left: 190px;
 	}
 }
 

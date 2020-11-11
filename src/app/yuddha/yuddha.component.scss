@@ -63,9 +63,6 @@
 article {
     font-size: 1em;
     color: white;
-    &:hover {
-        color: #555;
-    }
 }
 
 @import "src/responsive.scss";
