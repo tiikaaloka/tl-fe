@@ -57,13 +57,18 @@
 }
 
 article {
-    font-size: 1em;
+	font-size: 1em;
+	margin-top: 100px;
    div {
 	   color: white;
    }
     &:hover {
         color: #555;
 	}
+}
+
+.kaarika {
+	margin-top:-100px;
 }
 
 .feature-image-screen{

@@ -350,12 +350,15 @@
 
 @media screen and (max-width:700px){
 
-	.content.primary {
+	.content .primary {
 		margin-bottom:30px;
 	}
+
 	.features-block .feature {
 		width:100%;
+		margin-left:120px;
 	}
+	
 	.block p.desc {
 		font-size:18px;
 	}
@@ -376,9 +379,19 @@
 		margin-left:-9em;
 		overflow-x: scroll;
 	}
+	.chashaka .f1 {
+		margin-left:0px;
+	}
+	.kaarika .f1 {
+		margin-left:0px;
+	}
 }
 
 @media (max-width:600px){
+
+	.grid.primary {
+		font-size: 2vw;
+	}
 
 	.tease-item {
 		width:100%;
