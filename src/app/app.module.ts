@@ -11,6 +11,7 @@ import { AdhyayanaPageComponent } from './adhyayana-page/adhyayana-page.componen
 import { DhaatukaarikaComponent } from './dhaatukaarika/dhaatukaarika.component';
 import { YuddhaComponent } from './yuddha/yuddha.component';
 import { SuvarnachashakaComponent } from './suvarnachashaka/suvarnachashaka.component';
+import { AboutPageComponent } from './about-page/about-page.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { SuvarnachashakaComponent } from './suvarnachashaka/suvarnachashaka.comp
     AdhyayanaPageComponent,
     DhaatukaarikaComponent,
     YuddhaComponent,
-    SuvarnachashakaComponent
+    SuvarnachashakaComponent,
+    AboutPageComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
