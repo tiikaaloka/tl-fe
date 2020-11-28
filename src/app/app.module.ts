@@ -12,6 +12,9 @@ import { DhaatukaarikaComponent } from './dhaatukaarika/dhaatukaarika.component'
 import { YuddhaComponent } from './yuddha/yuddha.component';
 import { SuvarnachashakaComponent } from './suvarnachashaka/suvarnachashaka.component';
 import { AboutPageComponent } from './about-page/about-page.component';
+import { DonatePageComponent } from './donate-page/donate-page.component';
+import { TermsComponent } from './terms/terms.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 
 @NgModule({
@@ -24,7 +27,10 @@ import { AboutPageComponent } from './about-page/about-page.component';
     DhaatukaarikaComponent,
     YuddhaComponent,
     SuvarnachashakaComponent,
-    AboutPageComponent
+    AboutPageComponent,
+    DonatePageComponent,
+    TermsComponent,
+    PrivacyComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

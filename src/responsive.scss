@@ -389,7 +389,7 @@
 		width:100%;
 	}
 	.list-type3 li, a{
-		margin-left:-9em;
+		// margin-left:-9em;
 		overflow-x: scroll;
 	}
 	.chashaka .f1 {
@@ -444,8 +444,17 @@
 			font-size:12px;
 		}
 	}
+
 	.list-type3 li, a{
 		margin-left:-9em;
+	}
+
+	.link a {
+		margin-left: 0px;
+	}
+
+	.donate.f1 a {
+		margin-left: 0em;
 	}
 	.footer-text .footer-text-column-2 .social-wrap {
 		margin-right:-60px;

@@ -1,3 +1,4 @@
+import { SampadanaModule } from './sampadana/sampadana.module';
 import { NgModule } from '@angular/core';
 import { ServerModule } from '@angular/platform-server';
 
@@ -8,7 +9,8 @@ import { AppComponent } from './app.component';
   imports: [
     AppModule,
     ServerModule,
+    SampadanaModule
   ],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent, SampadanaModule],
 })
 export class AppServerModule {}
