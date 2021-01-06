@@ -1,14 +1,17 @@
+import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { SampadanaRoutingModule } from './sampadana-routing.module';
+import { EditComponent } from '../edit/edit.component';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [EditComponent],
   imports: [
     CommonModule,
-    SampadanaRoutingModule
+    SampadanaRoutingModule,
+    BrowserModule /* or CommonModule */
   ]
 })
 export class SampadanaModule { }

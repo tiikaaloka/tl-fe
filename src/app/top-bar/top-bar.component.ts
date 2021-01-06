@@ -42,7 +42,6 @@ export class TopBarComponent implements OnInit {
     };
     $('body').on('click', (e) => {
       const target = $(e.target);
-      console.log(target);
 
       // Toggle the side menu if click on side-menu-head
       if (

@@ -1,0 +1,57 @@
+<div class="grid primary">
+      <div class="content primary">
+        <div class="content-wrap">
+          <div class="block header-block">
+            <div class="headline-image">
+              <div class="headline-image-screen">
+                <div class="grid inner">
+                <div>
+                    <label for="num">
+                    Grantha
+                    <select [formControl]="grantha">
+                        <option *ngFor="let grantha of granthaList">{{grantha}}</option>
+                    </select>
+                    </label>
+                </div><div>
+                    <label for="shlokanum">
+                    Shloka Number
+                    <select [formControl]="kanda">
+                        <option *ngFor="let kanda of kandaList">{{kanda}}</option>
+                    </select>
+                    <select [formControl]="sarga">
+                        <option *ngFor="let sarga of sargaList">{{sarga}}</option>
+                    </select>
+                    <select [formControl]="verse">
+                        <option *ngFor="let shloka of shlokaList">{{shloka}}</option>
+                    </select>
+                    </label>
+                </div>
+                <form [formGroup] = "textAreaForm">
+                    <div>
+                        <label for="shloka">
+                        Shloka
+                        </label>
+                        <textarea id="shloka" name="story"
+                                rows="4" cols="50" formControlName="shloka"></textarea>
+                    </div>
+
+                    <div>
+                        <label for="tiika">
+                        Tiika
+                        </label>
+                        <textarea id="tiika" name="story"
+                                rows="5" cols="133" formControlName="tiika"></textarea>
+                    </div>
+
+                    <button class="button" type="submit" (click)="onSubmit()">Submit</button>
+                    <div>
+                      <p>{{textAreaForm.get("shloka").value | json}}</p>
+                    </div>
+                    <div>
+                      <p>{{textAreaForm.get("tiika").value | json}}</p>
+                    </div>
+                </form>
+              </div>
+            </div>
+          </div>
+</div>

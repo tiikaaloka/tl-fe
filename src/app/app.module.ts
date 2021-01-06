@@ -15,7 +15,12 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { DonatePageComponent } from './donate-page/donate-page.component';
 import { TermsComponent } from './terms/terms.component';
 import { PrivacyComponent } from './privacy/privacy.component';
-
+import { EditComponent } from './edit/edit.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { OrderComponent } from './order/order.component';
+import { HttpClientModule } from '@angular/common/http';
+import { RamayanaComponent } from './ramayana/ramayana.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -30,12 +35,19 @@ import { PrivacyComponent } from './privacy/privacy.component';
     AboutPageComponent,
     DonatePageComponent,
     TermsComponent,
-    PrivacyComponent
+    PrivacyComponent,
+    EditComponent,
+    OrderComponent,
+    RamayanaComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    CommonModule,
     AppRoutingModule,
-    NgxHeadroomModule
+    HttpClientModule,
+    NgxHeadroomModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
