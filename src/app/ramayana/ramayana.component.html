@@ -4,16 +4,24 @@
           <div class="block header-block">
             <div class="headline-image">
               <div class="headline-image-screen">
+              <div class="grid button">
+              <!--<button id="save" *ngIf="isEdited" (click) = "save()">Save Changes</button>-->
+              </div>
                 <div class="grid inner">
-                    <div *ngFor=" let item of grantha">
+                  <div *ngFor="let item of dhAtus">
+                    <div>
+                      <p>धातु: - {{item.dhAtu}}</p>
+                    </div>
+                  </div>
+                    <!--<div *ngFor="let item of grantha">
                       <div>
                         <h4>श्लोक:</h4>
-                        <p>{{item.shloka}}</p>
+                        <p contenteditable (input)="onShlokaChange($event.target.innerHTML, item.num)">{{item.shloka}}</p>
                       </div>
                       <div>
                         <h4>टीका</h4>
-                        <p style="text-align:justify">{{item.tiika}}</p>
-                      </div>
+                        <p style="text-align:justify" contenteditable (input)="onTiikaChange($event.target.innerHTML, item.num)">{{item.tiika}}</p>
+                      </div> -->
                     </div>
                 </div>
               </div>

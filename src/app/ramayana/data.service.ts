@@ -10,11 +10,21 @@ export class DataService {
   constructor(private httpClient: HttpClient) { }
 
   public getData(): any {
-    const url = 'https://tl-be-dot-tiikaaloka.el.r.appspot.com/ramayana';
+    // const url = 'https://tl-be-dot-tiikaaloka.el.r.appspot.com/ramayana';
+    const url = 'http://localhost:8080/dhAtu';
     return this.httpClient.get(
       url
     );
-}
+  }
+
+  public save(payload): any {
+    console.log(payload);
+    const url = 'https://tl-be-dot-tiikaaloka.el.r.appspot.com/shloka';
+    return this.httpClient.post(
+      url,
+      payload
+    );
+  }
 
   private handleError(error: HttpErrorResponse): any {
     if (error.error instanceof ErrorEvent) {

@@ -8,7 +8,7 @@
                 <div>
                     <label for="num">
                     Grantha
-                    <select [formControl]="grantha">
+                    <select [formControl]="grantha" (change)="onChange($event.target.value)">
                         <option *ngFor="let grantha of granthaList">{{grantha}}</option>
                     </select>
                     </label>
@@ -27,29 +27,139 @@
                     </label>
                 </div>
                 <form [formGroup] = "textAreaForm">
-                    <div>
+                    <div *ngIf="grantha.value == 'ramayana'">
+                      <div>
                         <label for="shloka">
                         Shloka
                         </label>
                         <textarea id="shloka" name="story"
                                 rows="4" cols="50" formControlName="shloka"></textarea>
+                      </div>
+
+                      <div>
+                          <label for="tiika">
+                          Kataka Tiika 
+                          </label>
+                          <textarea id="tiika" name="story"
+                                  rows="5" cols="133" formControlName="kataka"></textarea>
+                      </div>
+
+                      <div>
+                          <label for="tiika">
+                          BhuShaNa Tiika
+                          </label>
+                          <textarea id="tiika" name="story"
+                                  rows="5" cols="133" formControlName="BhuShaNa"></textarea>
+                      </div>
+
+                      <div>
+                          <label for="tiika">
+                          DharmaakUtam
+                          </label>
+                          <textarea id="tiika" name="story"
+                                  rows="5" cols="133" formControlName="dharmaakUtam"></textarea>
+                      </div>
+
+                      <div>
+                          <label for="tiika">
+                          Tanishlokii Tiika
+                          </label>
+                          <textarea id="tiika" name="story"
+                                  rows="5" cols="133" formControlName="tanishlokii"></textarea>
+                      </div>
+
+                      <div>
+                          <label for="tiika">
+                          Tilaka Tiika
+                          </label>
+                          <textarea id="tiika" name="story"
+                                  rows="5" cols="133" formControlName="tilaka"></textarea>
+                      </div>
+
+                      <div>
+                          <label for="tiika">
+                          ShiromaNi Tiika
+                          </label>
+                          <textarea id="tiika" name="story"
+                                  rows="5" cols="133" formControlName="shiromaNi"></textarea>
+                      </div>
                     </div>
 
-                    <div>
-                        <label for="tiika">
-                        Tiika
+                    <div *ngIf="grantha.value == 'bhagavata'">
+                      <div>
+                        <label for="shloka">
+                        Shloka
                         </label>
-                        <textarea id="tiika" name="story"
-                                rows="5" cols="133" formControlName="tiika"></textarea>
+                        <textarea id="shloka" name="story"
+                                rows="4" cols="50" formControlName="shloka"></textarea>
+                      </div>
+
+                      <div>
+                          <label for="tiika">
+                          Anvitaarthaprakaashika Tiika
+                          </label>
+                          <textarea id="tiika" name="story"
+                                  rows="5" cols="133" formControlName="anvitaarthaprakAshikaa"></textarea>
+                      </div>
+
+                      <div>
+                          <label for="tiika">
+                          Vishvanatha Chakravarti Tiika
+                          </label>
+                          <textarea id="tiika" name="story"
+                                  rows="5" cols="133" formControlName="vchakravarti"></textarea>
+                      </div>
+
+                      <div>
+                          <label for="tiika">
+                          Sridhara Bhashya 
+                          </label>
+                          <textarea id="tiika" name="story"
+                                  rows="5" cols="133" formControlName="sridhara"></textarea>
+                      </div>
+
+                      <div>
+                          <label for="tiika">
+                          Vijayadhvaja Tiirtha Tiika
+                          </label>
+                          <textarea id="tiika" name="story"
+                                  rows="5" cols="133" formControlName="vijayadhvaja"></textarea>
+                      </div>
+
+                      <div>
+                          <label for="tiika">
+                          Viiraraaghavaachaarya Tiika
+                          </label>
+                          <textarea id="tiika" name="story"
+                                  rows="5" cols="133" formControlName="vIrarAghavAchArya"></textarea>
+                      </div>
+                    </div>
+
+                    <div *ngIf="grantha.value == 'mahabharata'">
+                      <div>
+                        <label for="shloka">
+                        Shloka
+                        </label>
+                        <textarea id="shloka" name="story"
+                                rows="4" cols="50" formControlName="shloka"></textarea>
+                      </div>
+
+                      <div>
+                          <label for="tiika">
+                          NiilakaNTha Tiika
+                          </label>
+                          <textarea id="tiika" name="story"
+                                  rows="5" cols="133" formControlName="nIlakaNTha"></textarea>
+                      </div>
                     </div>
 
                     <button class="button" type="submit" (click)="onSubmit()">Submit</button>
                     <div>
-                      <p>{{textAreaForm.get("shloka").value | json}}</p>
+                      <p>{{textAreaForm.get("shloka").value}}</p>
                     </div>
-                    <div>
+                    <!--<div>
                       <p>{{textAreaForm.get("tiika").value | json}}</p>
-                    </div>
+                    </div>-->
                 </form>
               </div>
             </div>

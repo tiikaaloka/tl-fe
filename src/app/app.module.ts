@@ -21,6 +21,7 @@ import { OrderComponent } from './order/order.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RamayanaComponent } from './ramayana/ramayana.component';
 import { CommonModule } from '@angular/common';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { CommonModule } from '@angular/common';
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     CommonModule,
+    NgbModule,
     AppRoutingModule,
     HttpClientModule,
     NgxHeadroomModule,
