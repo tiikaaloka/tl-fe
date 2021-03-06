@@ -12,7 +12,7 @@ export class TinkritkoshaComponent implements OnInit {
 
   public dhAtus = [];
   public dhAtu: FormControl;
-  public editDhAtu = {};
+  public editDhAtu = {Nvul: null};
   constructor(private service: TinkritService, private ref: ChangeDetectorRef) {
     this.dhAtu = new FormControl('');
    }

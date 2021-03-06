@@ -31,7 +31,7 @@
     "jquery": "^3.5.1",
     "mongodb": "^3.6.3",
     "ngx-bootstrap": "^6.1.0",
-    "rxjs": "~6.6.6",
+    "ngx-headroom": "^1.0.6",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
   },

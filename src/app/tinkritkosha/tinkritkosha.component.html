@@ -19,7 +19,7 @@
                   </div>
                   <button class="button" type="submit" (click)="onFetch()">Edit</button>
                 </div>
-                <div *ngIf="editDhAtu.Nvul !== undefined" class="grid inner">
+		<div *ngIf="editDhAtu?.Nvul !== null" class="grid inner">
                   <div class="card">
                     <div class="card-body">
                       <h5 class="card-title">ण्वुल् - {{editDhAtu.Nvul}}</h5>
