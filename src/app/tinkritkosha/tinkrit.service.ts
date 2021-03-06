@@ -7,7 +7,7 @@ import { response } from 'express';
 
 @Injectable()
 export class TinkritService {
-  public url = 'http://localhost:8080/';
+  public url = 'http://tiikaaloka.org:8081/';
 
   constructor(private httpClient: HttpClient) { }
 
