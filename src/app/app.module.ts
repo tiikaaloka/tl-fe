@@ -22,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RamayanaComponent } from './ramayana/ramayana.component';
 import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { TinkritkoshaComponent } from './tinkritkosha/tinkritkosha.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     PrivacyComponent,
     EditComponent,
     OrderComponent,
-    RamayanaComponent
+    RamayanaComponent,
+    TinkritkoshaComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

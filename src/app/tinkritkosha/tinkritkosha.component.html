@@ -1,0 +1,161 @@
+<div class="grid primary">
+      <div class="content primary">
+        <div class="content-wrap">
+          <div class="block header-block">
+            <div class="headline-image">
+              <div class="headline-image-screen">
+              <div class="grid button">
+              <!--<button id="save" *ngIf="isEdited" (click) = "save()">Save Changes</button>-->
+              </div>
+
+                <div class="grid inner">
+                  <div>
+                    <label for="num">
+                    धातु:
+                    <select [formControl]="dhAtu">
+                        <option *ngFor="let item of dhAtus">{{item.dhAtu}}-{{item.dhAtu_gaNa}}</option>
+                    </select>
+                    </label>
+                  </div>
+                  <button class="button" type="submit" (click)="onFetch()">Edit</button>
+                </div>
+                <div *ngIf="editDhAtu.Nvul !== undefined" class="grid inner">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">ण्वुल् - {{editDhAtu.Nvul}}</h5>
+                      <p class="card-text">{{editDhAtu.Nvul_ft}}</p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">तृच् (तृन्) - {{editDhAtu.tRch}}</h5>
+                      <p class="card-text">{{editDhAtu.tRch_ft}}</p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">शतृ/शानच् (वर्त.) - {{editDhAtu.shatR_shAnach}}</h5>
+                      <p class="card-text">{{editDhAtu.shatR_shAnach_ft}}</p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">स्य + शतृ/शानच् - {{editDhAtu.sya_s_s}}</h5>
+                      <p class="card-text">{{editDhAtu.sya_s_s_ft}}</p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">णिच् + शतृ/शानच् - {{editDhAtu.Nic_s_s}}</h5>
+                      <p class="card-text">{{editDhAtu.Nic_s_s_ft}}</p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">यक् + शानच् - {{editDhAtu.yak_s}}</h5>
+                      <p class="card-text">{{editDhAtu.yak_s_ft}}</p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">क्त: - {{editDhAtu.kta}}</h5>
+                      <p class="card-text">{{editDhAtu.kta_ft}}</p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">क्तवतु - {{editDhAtu.ktavatu}}</h5>
+                      <p class="card-text">{{editDhAtu.ktavatu_ft}}</p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">तव्यत् - {{editDhAtu.tavyat}}</h5>
+                      <p class="card-text">{{editDhAtu.tavyat_ft}}</p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">अनीयर् - {{editDhAtu.anIyar}}</h5>
+                      <p class="card-text">{{editDhAtu.anIyar_ft}}</p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">ण्यत् / यत् - {{editDhAtu.Nyat_yat}}</h5>
+                      <p class="card-text">{{editDhAtu.Nyat_yat_ft}}</p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">घञ् /अच् इ. - {{editDhAtu.ghan_ac_i}}</h5>
+                      <p class="card-text">{{editDhAtu.ghan_ac_i_ft}}</p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">क्तिन् /अ इ. - {{editDhAtu.ktin_a_i}}</h5>
+                      <p class="card-text">{{editDhAtu.ktin_a_i_ft}}</p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">सन् + अ - {{editDhAtu.san_a}}</h5>
+                      <p class="card-text">{{editDhAtu.san_a_ft}}</p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">ल्युट् (भावे) - {{editDhAtu.lyuT_bhAve}}</h5>
+                      <p class="card-text">{{editDhAtu.lyuT_bhAve_ft}}</p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">तुमुन् - {{editDhAtu.tumun}}</h5>
+                      <p class="card-text">{{editDhAtu.tumun_ft}}</p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">क्त्वा - {{editDhAtu.ktvA}}</h5>
+                      <p class="card-text">{{editDhAtu.ktvA_ft}}</p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">ल्यप् - {{editDhAtu.lyap}}</h5>
+                      <p class="card-text">{{editDhAtu.lyap_ft}}</p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">णमुल्  - {{editDhAtu.Namul}}</h5>
+                      <p class="card-text">{{editDhAtu.Namul_ft}}</p>
+                    </div>
+                  </div>
+              </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+</div>

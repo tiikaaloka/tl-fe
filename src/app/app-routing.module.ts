@@ -1,3 +1,4 @@
+import { TinkritkoshaComponent, salt } from './tinkritkosha/tinkritkosha.component';
 import { RamayanaComponent } from './ramayana/ramayana.component';
 import { OrderComponent } from './order/order.component';
 import { EditComponent } from './edit/edit.component';
@@ -14,7 +15,6 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { DonatePageComponent } from './donate-page/donate-page.component';
 import { BrowserModule } from '@angular/platform-browser';
 
-
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'about', component: AboutPageComponent },
@@ -28,7 +28,8 @@ const routes: Routes = [
   { path: 'suvarnachashaka', component: SuvarnachashakaComponent },
   { path: 'edit', component: EditComponent },
   { path: 'books', component: OrderComponent },
-  { path: 'data', component: RamayanaComponent }
+  { path: 'data', component: RamayanaComponent },
+  { path: 'tinkritkosha' + salt, component: TinkritkoshaComponent }
 ];
 
 @NgModule({
